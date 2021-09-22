@@ -21,7 +21,7 @@ TEST(geometry, closest_point_plane)
         // Read
         f >> point;
         f >> plane_point;
-        f >> plane_normal;
+        f >> plane_normal;3
         f >> file_result;
 
         // Test
@@ -33,7 +33,7 @@ TEST(geometry, closest_point_plane)
                                                                         << std::fixed << std::setprecision(16) << implementation_result << std::defaultfloat << std::setprecision(6) << std::endl;
     }
 }
-
+/*
 TEST(geometry, closest_segment_segment)
 {
     std::fstream f(WORKDIR "test/in_geometry/closest_segment_segment.txt");
@@ -462,4 +462,4 @@ TEST(geometry, in_frustum_aabb)
                                                       << min << " " << max << std::endl
                                                       << implementation_result << std::endl;
     }
-}
+}*/

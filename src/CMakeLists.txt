@@ -8,7 +8,7 @@ add_library(${PROJECT_NAME}
     math.hpp math.cpp 
     debug_system.cpp debug_system.hpp 
     shader.cpp shader.hpp 
-    window.cpp window.hpp 
+    window.cpp "window.hpp" 
     opengl.cpp opengl.hpp 
     geometry.cpp geometry.hpp    
 )

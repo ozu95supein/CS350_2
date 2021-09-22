@@ -1,7 +1,10 @@
+
 #ifndef __GEOMETRY_HPP__
 #define __GEOMETRY_HPP__
 
 #include "math.hpp"
+#include <iostream>
+#include <fstream>
 
 enum
 {
@@ -10,5 +13,10 @@ enum
     eOUTSIDE     = 1
 };
 
+bool closest_point_plane(glm::vec3 point, glm::vec3 plane_normal, float dotprod);
+
+friend istream& operator>>(istream& input, glm::vec3 & v) {
+    
+}
 
 #endif // __GEOMETRY_HPP__
