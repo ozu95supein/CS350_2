@@ -13,7 +13,7 @@ enum
     eOUTSIDE     = 1
 };
 
-bool closest_point_plane(glm::vec3 point, glm::vec3 plane_normal, float dotprod);
+glm::vec3 closest_point_plane(glm::vec3 point, glm::vec3 plane_normal, float d);
 
 friend istream& operator>>(istream& input, glm::vec3 & v) {
     
